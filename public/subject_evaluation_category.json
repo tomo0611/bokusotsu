@@ -1,0 +1,92 @@
+[
+  {
+    "id": "A",
+    "name": "＜基幹教育科目（基礎教育科目除く）＞",
+    "level": 1,
+    "parent": null
+  },
+  {
+    "id": "A1",
+    "name": "総合教養科目",
+    "level": 2,
+    "parent": "A"
+  },
+  {
+    "id": "A2",
+    "name": "初年次教育科目",
+    "level": 2,
+    "parent": "A"
+  },
+  {
+    "id": "A3",
+    "name": "情報リテラシー科目",
+    "level": 2,
+    "parent": "A"
+  },
+  {
+    "id": "A4",
+    "name": "外国語科目",
+    "level": 2,
+    "parent": "A"
+  },
+  {
+    "id": "A41",
+    "name": "英語科目",
+    "level": 3,
+    "parent": "A4"
+  },
+  {
+    "id": "A42",
+    "name": "初修外国語科目",
+    "level": 3,
+    "parent": "A4"
+  },
+  {
+    "id": "A421",
+    "name": "ロシア語科目",
+    "level": 4,
+    "parent": "A42"
+  },
+  {
+    "id": "A5",
+    "name": "健康・スポーツ科学科目",
+    "level": 2,
+    "parent": "A"
+  },
+  {
+    "id": "B",
+    "name": "＜基幹教育科目（基礎教育科目）＞",
+    "level": 1,
+    "parent": null
+  },
+  {
+    "id": "B1",
+    "name": "基礎教育科目",
+    "level": 2,
+    "parent": "B"
+  },
+  {
+    "id": "C",
+    "name": "＜専門科目＞",
+    "level": 1,
+    "parent": null
+  },
+  {
+    "id": "C1",
+    "name": "学部共通科目",
+    "level": 2,
+    "parent": "C"
+  },
+  {
+    "id": "C2",
+    "name": "専門導入科目",
+    "level": 2,
+    "parent": "C"
+  },
+  {
+    "id": "C3",
+    "name": "学科専門科目",
+    "level": 2,
+    "parent": "C"
+  }
+]

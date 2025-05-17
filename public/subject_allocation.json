@@ -1,0 +1,690 @@
+[
+  {
+    "id": "1GAH012",
+    "name": "コンピューターグラフィックス概論",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GAB002",
+    "name": "心理学入門",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GAB006",
+    "name": "文化人類学入門",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GAG017",
+    "name": "近代社会と読書",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GAH009",
+    "name": "社会におけるネットワーク",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GAJ004",
+    "name": "大学でどう学ぶか",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GAJ002",
+    "name": "キャリアと実践",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A1",
+    "is_required": false
+  },
+  {
+    "id": "1GBA001",
+    "name": "初年次ゼミナール",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A2",
+    "is_required": true
+  },
+  {
+    "id": "1GCA001",
+    "name": "情報リテラシー",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A3",
+    "is_required": true
+  },
+  {
+    "id": "1GDA001",
+    "name": "University English 1A",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A41",
+    "is_required": true
+  },
+  {
+    "id": "1GDA002",
+    "name": "University English 1B",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A41",
+    "is_required": true
+  },
+  {
+    "id": "1GDA003",
+    "name": "University English 2A",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A41",
+    "is_required": true
+  },
+  {
+    "id": "1GDA004",
+    "name": "University English 2B",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A41",
+    "is_required": true
+  },
+  {
+    "id": "1GDA005",
+    "name": "University English 3A",
+    "credits": 1.00,
+    "allocated_grade": 2,
+    "evaluation_category": "A41",
+    "is_required": true
+  },
+  {
+    "id": "1GDA006",
+    "name": "University English 3B",
+    "credits": 1.00,
+    "allocated_grade": 2,
+    "evaluation_category": "A41",
+    "is_required": true
+  },
+  {
+    "id": "1GDE001",
+    "name": "ロシア語入門1",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A421",
+    "is_required": true
+  },
+  {
+    "id": "1GDE002",
+    "name": "ロシア語入門2",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A421",
+    "is_required": true
+  },
+  {
+    "id": "1GDE003",
+    "name": "ロシア語入門A（基礎）",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A421",
+    "is_required": true
+  },
+  {
+    "id": "1GDE004",
+    "name": "ロシア語入門B（会話）",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A421",
+    "is_required": true
+  },
+  {
+    "id": "1GDE005",
+    "name": "ロシア語初級A（基礎）",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A421",
+    "is_required": true
+  },
+  {
+    "id": "1GDE006",
+    "name": "ロシア語初級B（会話）",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A421",
+    "is_required": true
+  },
+  {
+    "id": "1GFA001",
+    "name": "健康・スポーツ科学概論",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A5",
+    "is_required": true
+  },
+  {
+    "id": "1GFB001",
+    "name": "健康・スポーツ科学実習",
+    "credits": 1.00,
+    "allocated_grade": 1,
+    "evaluation_category": "A5",
+    "is_required": true
+  },
+  {
+    "id": "1GGA008",
+    "name": "微積分1B",
+    "credits": 4.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGA009",
+    "name": "微積分2",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGA010",
+    "name": "線形代数1",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGA012",
+    "name": "線形代数2B",
+    "credits": 4.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGA013",
+    "name": "常微分方程式",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGA014",
+    "name": "複素解析",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGA016",
+    "name": "応用数学",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGA017",
+    "name": "数値解析",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGA020",
+    "name": "確率統計",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGB003",
+    "name": "基礎力学B1",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGB004",
+    "name": "基礎力学B2",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGB009",
+    "name": "基礎電磁気学C",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGB010",
+    "name": "基礎熱力学",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGB013",
+    "name": "基礎量子力学B",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGB021",
+    "name": "基礎物理学実験1B",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGB024",
+    "name": "応用物理学実験",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1GGC007",
+    "name": "基礎無機・物理化学",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGC008",
+    "name": "基礎有機化学",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGC010",
+    "name": "基礎化学実験",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGE001",
+    "name": "地球学入門",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGF002",
+    "name": "データベースと情報検索",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "B1",
+    "is_required": false
+  },
+  {
+    "id": "1GGF003",
+    "name": "プログラミング入門A",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "B1",
+    "is_required": true
+  },
+  {
+    "id": "1AJX001",
+    "name": "工学倫理",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C1",
+    "is_required": true
+  },
+  {
+    "id": "1AJX002",
+    "name": "環境倫理",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C1",
+    "is_required": false
+  },
+  {
+    "id": "1AJX003",
+    "name": "エンジニアのためのキャリアデザイン／経営論",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C1",
+    "is_required": false
+  },
+  {
+    "id": "1AJX004",
+    "name": "工学部インターンシップ",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C1",
+    "is_required": false
+  },
+  {
+    "id": "1AJX005",
+    "name": "エンジニアのための経済学",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C1",
+    "is_required": false
+  },
+  {
+    "id": "1AJG001",
+    "name": "情報工学基礎演習1",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "C2",
+    "is_required": true
+  },
+  {
+    "id": "1AJG002",
+    "name": "情報工学基礎演習2",
+    "credits": 2.00,
+    "allocated_grade": 1,
+    "evaluation_category": "C2",
+    "is_required": true
+  },
+  {
+    "id": "1AJG003",
+    "name": "情報工学演習1",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG004",
+    "name": "情報工学演習2",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG005",
+    "name": "情報工学演習3",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG006",
+    "name": "情報工学実験1",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG007",
+    "name": "情報工学実験2",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG008",
+    "name": "情報工学技術英語",
+    "credits": 2.00,
+    "allocated_grade": 4,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG009",
+    "name": "情報工学卒業研究A",
+    "credits": 3.00,
+    "allocated_grade": 4,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG010",
+    "name": "情報工学卒業研究B",
+    "credits": 3.00,
+    "allocated_grade": 4,
+    "evaluation_category": "C3",
+    "is_required": true
+  },
+  {
+    "id": "1AJG011",
+    "name": "離散数学",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG012",
+    "name": "情報数学",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG013",
+    "name": "電気回路入門",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG014",
+    "name": "情報理論A",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG015",
+    "name": "信号処理論",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG016",
+    "name": "プログラミング言語概論",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG017",
+    "name": "論理演算工学",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG018",
+    "name": "データ構造とアルゴリズム",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG019",
+    "name": "メディア情報処理",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG020",
+    "name": "計算機アーキテクチャ",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG021",
+    "name": "ソフトウェア工学",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG022",
+    "name": "システム工学",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG023",
+    "name": "データ解析",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG024",
+    "name": "人工知能",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG025",
+    "name": "ネットワーク工学",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG026",
+    "name": "計算理論",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG027",
+    "name": "数理計画法",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG028",
+    "name": "意思決定理論",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG029",
+    "name": "システムプログラム",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG030",
+    "name": "知覚情報処理",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG031",
+    "name": "計算知能",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG032",
+    "name": "データベース論",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG033",
+    "name": "線形フィードバック制御",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG034",
+    "name": "情報伝送論",
+    "credits": 2.00,
+    "allocated_grade": 2,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG035",
+    "name": "情報セキュリティ",
+    "credits": 2.00,
+    "allocated_grade": 3,
+    "evaluation_category": "C3",
+    "is_required": false
+  },
+  {
+    "id": "1AJG036",
+    "name": "情報工学特殊講義",
+    "credits": 2.00,
+    "allocated_grade": 4,
+    "evaluation_category": "C3",
+    "is_required": false
+  }
+]
