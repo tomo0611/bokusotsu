@@ -1,0 +1,25 @@
+.background {
+    /* 白い背景 */
+    background-color: #fff;
+    /* グリッドのサイズを設定 */
+    --grid-size: 25px;
+    /* 例: 20px間隔のグリッド */
+    --grid-color: #eee;
+    /* 例: 薄いグレー */
+    --dot-size: 1px;
+    /* 例: 点線の点のサイズ */
+
+    /* 縦線 */
+    background-image:
+        linear-gradient(to right, var(--grid-color) var(--dot-size), transparent var(--dot-size)),
+        linear-gradient(to bottom, var(--grid-color) var(--dot-size), transparent var(--dot-size));
+    /* グリッド間隔を設定 */
+    background-size: var(--grid-size) var(--grid-size);
+}
+
+/* これを入れないと背景が消える */
+*,
+::before,
+::after {
+    background-repeat: inherit !important;
+}

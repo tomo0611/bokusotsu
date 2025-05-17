@@ -1,12 +1,11 @@
 <template>
   <v-app>
     <Header />
-    <v-main>
+    <v-main class="background">
+      <CurriculumSelector />
+      <SubjectList />
       <HelloWorld />
     </v-main>
+    <Footer />
   </v-app>
 </template>
-
-<script setup lang="ts">
-//
-</script>
