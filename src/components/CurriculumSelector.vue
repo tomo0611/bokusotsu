@@ -12,15 +12,15 @@
     </v-card>
 </template>
 
-<script>
-export default {
-    data: () => ({
-        years: ['2022'],
-        defaultYear: '2022',
-        semesters: ['前期'],
-        defaultSemester: '前期',
-        curriculums: ['公大 学部・学域 工 情報'],
-        defaultCurriculum: '公大 学部・学域 工 情報',
-    }),
-}
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const years = ['2022'] as const;
+const defaultYear = ref<typeof years[number]>('2022');
+
+const semesters = ['前期'] as const;
+const defaultSemester = ref<typeof semesters[number]>('前期');
+
+const curriculums = ['公大 学部・学域 工 情報'] as const;
+const defaultCurriculum = ref<typeof curriculums[number]>('公大 学部・学域 工 情報');
 </script>

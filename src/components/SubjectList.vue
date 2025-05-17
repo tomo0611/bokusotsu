@@ -7,18 +7,18 @@
                 <v-list-item v-if="item.type === 'subheader'" :key="'category_' + item.id"
                     class="subheader bg-primary-lighter border-sm"
                     v-bind:style="{ marginLeft: 25 * (item.level - 1) + 'px' }">
-                    {{ item.title }}
+                    {{ item.name }}
                 </v-list-item>
                 <v-list-item v-if="item.type === 'item'" :key="'list_' + item.id" :value="item.id"
                     @click="newValue => changeAquired(item)" v-bind:style="{ marginLeft: 25 * (item.level - 1) + 'px' }"
                     class="border-sm">
-                    <template v-slot:prepend="{ is_aquired, select }">
+                    <template>
                         <v-list-item-action start>
                             <v-checkbox-btn :model-value="item.is_aquired"></v-checkbox-btn>
                         </v-list-item-action>
                     </template>
 
-                    {{ item.title }}
+                    {{ item.name }}
                 </v-list-item>
             </template>
         </v-list>
@@ -32,7 +32,7 @@
                 <v-list-item v-if="item.type === 'subheader'" :key="'cat_' + item.id" class="border-sm"
                     v-bind:style="{ marginLeft: 25 * (item.level - 1) + 'px' }">
                     <div class="d-flex justify-space-between align-center">
-                        <p>{{ item.title }}</p>
+                        <p>{{ item.name }}</p>
                         <p v-bind:style="{ marginLeft: 25 * (item.level - 1) + 'px' }" max-width="20">{{
                             caculateAquiredCredits(item.id).toPrecision(3) + '単位' }}</p>
                     </div>
@@ -44,9 +44,7 @@
     <v-card class="mx-auto mt-8 pa-4" max-width="700" variant="outlined" rounded="lg">
         <h5 class="text-h5">卒業研究履修資格（4年次進級要件）</h5>
         <p class="mt-2">0. 総計単位数が105単位以上</p>
-        <p :class="'ml-8 ' + A1_totalCredits >= 105 ? 'text-green-darken-1' : 'text-red-lighten-1'">単位数は{{
-            A1_totalCredits.toPrecision(3)
-        }}単位です。</p>
+        <p :class="['ml-8', A1_totalCredits >= 105 ? 'text-green-darken-1' : 'text-red-lighten-1']">単位数は{{ A1_totalCredits.toPrecision(3) }}単位です。</p>
         <p class="mt-2">1. 基幹教育科目（基礎教育科目を除く）</p>
         <p class="ml-4">外国語科目（英語・初修外国語） 計8単位</p>
         <p class="mt-2">2. 基礎教育科目 基礎物理学実験1B、応用物理学実験 計4単位</p>
@@ -88,24 +86,32 @@ import { computed, ref, onMounted } from 'vue'
 type SubjectCategory = {
     id: string;
     name: string;
-    level: string;
-    parent: string | null;
+    level: number;
+    parent?: string;
 };
 
 type SubjectAllocation = {
     id: string;
     name: string;
-    credits: float;
-    allocated_grade: number;
-    evaluation_category: string;
+    credits?: number;
+    allocated_grade?: number;
+    evaluation_category?: string;
     is_required: boolean;
     level: number;
 };
 
-const items = ref([])
-const subject_evaluation_category = ref([])
-const subject_allocation = ref([])
-const aquired_subjects = ref([])
+type ListItem = (SubjectCategory & {
+    type: 'subheader';
+}) | (SubjectAllocation & {
+    type: 'item';
+    value: string;
+    is_aquired: boolean;
+});
+
+const items = ref<ListItem[]>([])
+const subject_evaluation_category = ref<SubjectCategory[]>([])
+const subject_allocation = ref<SubjectAllocation[]>([])
+const aquired_subjects = ref<string[]>([])
 
 const A1_totalCredits = ref(0);
 
@@ -148,13 +154,13 @@ onMounted(async () => {
         subject_allocation.value = await res2.json();
         aquired_subjects.value = await res3.json();
         for (const item of subject_evaluation_category.value) {
-            items.value.push({ type: 'subheader', id: item.id, title: item.name, level: item.level })
+            items.value.push({ type: 'subheader' as const, id: item.id, name: item.name, level: item.level })
             for (const sa_item of subject_allocation.value) {
                 if (sa_item.evaluation_category === item.id) {
                     items.value.push({
                         type: 'item',
                         id: sa_item.id,
-                        title: (sa_item.is_required ? '[必修] ' : '') + sa_item.name + ' (' + sa_item.credits.toPrecision(3) + ' 単位, ' + sa_item.allocated_grade + '年次配当)',
+                        name: (sa_item.is_required ? '[必修] ' : '') + sa_item.name + ' (' + sa_item.credits?.toPrecision(3) + ' 単位, ' + sa_item.allocated_grade + '年次配当)',
                         value: sa_item.id,
                         is_aquired: isAquired(sa_item.id, aquired_subjects.value),
                         is_required: sa_item.is_required,
@@ -175,16 +181,16 @@ onMounted(async () => {
  * @returns {float} - 修得済みの科目の合計単位数
  */
 function caculateAquiredCredits(id: string, only_required: boolean = false) {
-    let sum: float = 0.00;
-    let target_subject_category_ids = this.getAllSubjectCategoryIds(id);
-    const aquired_subjects = this.getAquiredSubjects();
-    for (const item of this.subject_allocation) {
-        if (target_subject_category_ids.includes(item.evaluation_category) && this.isAquired(item.id, [])) {
+    let sum: number = 0;
+    let target_subject_category_ids = getAllSubjectCategoryIds(id);
+    const aquired_subjects = getAquiredSubjects();
+    for (const item of subject_allocation.value) {
+        if (item.evaluation_category != null && target_subject_category_ids.includes(item.evaluation_category) && isAquired(item.id, [])) {
             // 必修のみで計算する場合は必修以外を除外
             if (only_required && !item.is_required) {
                 continue;
             }
-            sum += item.credits;
+            sum += item.credits ?? 0;
         }
     }
     return sum;
@@ -197,11 +203,11 @@ function caculateAquiredCredits(id: string, only_required: boolean = false) {
  */
 function getAllSubjectCategoryIds(id: string): string[] {
     let target_subject_category_ids = [id];
-    for (const item of this.subject_evaluation_category) {
+    for (const item of subject_evaluation_category.value) {
         // idが自分(親)かどうか確かめることにより子を取得する
         if (item.parent === id) {
             target_subject_category_ids.push(item.id);
-            target_subject_category_ids.push(...this.getAllSubjectCategoryIds(item.id));
+            target_subject_category_ids.push(...getAllSubjectCategoryIds(item.id));
         }
     }
     return target_subject_category_ids;
@@ -211,13 +217,13 @@ function getAllSubjectCategoryIds(id: string): string[] {
  * 履修済みかどうかの状態を変更するメソッド
  * @param {Object} item - 変更対象のアイテムオブジェクト
  */
-function changeAquired(item) {
+function changeAquired(item: ListItem & { type: 'item' }) {
     console.log('アイテム:', item);
 
     // 該当するアイテムの is_aquired プロパティを更新
     item.is_aquired = !item.is_aquired;
 
     // 必要であれば、ここでデータの永続化（APIコールなど）を行う
-    // 例: this.saveItemStatus(item.value, newValue);
+    // 例: saveItemStatus(item.value, newValue);
 }
 </script>
