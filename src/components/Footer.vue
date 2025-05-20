@@ -1,8 +1,8 @@
 <template>
-    <v-footer class="text-center d-flex flex-column ga-2 py-4" color="indigo-lighten-1">
+    <v-footer class="text-center d-flex flex-column ga-2 py-4" color="lightGrey">
 
-        <div class="text-caption font-weight-regular opacity-60">
-            コンピューターハウスランダム 友好祭展示用に作成しました。
+        <div class="text-caption font-weight-regular opacity-80">
+            コンピューターハウスランダム 2025年度友好祭展示作品
         </div>
 
         <v-divider></v-divider>
